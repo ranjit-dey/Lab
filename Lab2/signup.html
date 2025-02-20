@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            
+            background: #ad3838;
+            border-spacing: 0px;
+            
+        }
+        td{
+            padding: 9px 10px;
+            background: rgb(6, 2, 56);
+            color: yellow;
+            font-size: 14px;
+        }
+
+        th{
+            background: #ff8017;
+            height: 35px;
+            text-align: left;
+            padding-left: 10px;
+        }
+        #inside-table{
+            background: transparent;
+        }
+        #inside-table td{
+            border: 0px;
+    
+        }
+        button{
+            border: 1px solid black;
+            padding: 5px 15px;
+        }
+        .first-col{
+            text-align: right;
+        }
+        button{
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 25px;
+        }
+        #submit{
+            background: rgb(8, 163, 8);
+        }
+        #cancel{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th colspan="2">Sign Up</th>
+            </tr>
+            <tr>
+                <td class="first-col">First Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="first-col">Last Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="first-col">Date of Birth</td>
+                <td>
+                    <select name="" id="date">
+                        <option value="">Date</option>
+                        <option value="">1-31</option>
+                    </select>
+                    <select name="" id="date">
+                        <option value="">Month</option>
+                        <option value="">1-31</option>
+                    </select>
+                    <select name="" id="date">
+                        <option value="">Year</option>
+                        <option value="">1-31</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="first-col">Gender</td>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="first-col">Country</td>
+                <td><select name="" id="">
+                    <option value="">Country</option>
+                    <option value="india">India</option>
+                    <option value="america">America</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="first-col">Email</td>
+                <td><input type="email" name="" id="" placeholder="Enter Email"></td>
+            </tr>
+            <tr>
+                <td class="first-col">Phone</td>
+                <td><input type="text" placeholder="Enter Phone"></td>
+            </tr>
+            <tr>
+                <td class="first-col">Password</td>
+                <td><input type="password" placeholder="John@123"></td>
+            </tr>
+            <tr>
+                <td class="first-col">Confirm Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="" id="rules">
+                <label for="rules">I Agree to the Terms of use</label></td>
+            </tr>
+            <tr >
+                
+                <td colspan="2" align="right" style="background-color: #ff8017;">
+                    <button id="submit">Submit</button>
+                    <button id="cancel">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
